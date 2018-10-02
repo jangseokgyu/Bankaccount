@@ -1,4 +1,4 @@
-
+//구동 Manager.
 public class AccountManager {
 	public static void main(String[] args)
 	{

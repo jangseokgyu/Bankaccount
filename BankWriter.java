@@ -1,3 +1,4 @@
+//view 출력view MVC 'V'
 import java.awt.*;
 import javax.swing.*;
 import java.text.*;

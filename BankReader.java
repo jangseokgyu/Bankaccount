@@ -1,3 +1,4 @@
+//View 입력 view MVC 'V'
 import javax.swing.*;
 
 public class BankReader {
