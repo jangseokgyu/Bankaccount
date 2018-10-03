@@ -1,12 +1,14 @@
-//구동 Manager.
+//구동 클래스
 public class AccountManager {
-	public static void main(String[] args)
-	{
-		BankReader reader = new BankReader();
-		BankAccount account = new BankAccount(0);
-		BankWriter writer = new BankWriter("은행계좌 관리", account);
-		AccountController controller = new AccountController(reader,writer,account);
-		controller.processTransaction();
-	}
-
+    public static void main(String[] args) { 
+        BankReader reader = new BankReader();
+        BankAccount primary_account = new BankAccount(0);
+        BankWriter primary_writer = new BankWriter(primary_account);
+        BankAccount secondary_account = new BankAccount(0);
+        BankWriter secondary_writer = new BankWriter(secondary_account);
+        AccountController controller = new AccountController(reader,
+                primary_account, primary_writer, secondary_account,
+                secondary_writer);
+        controller.processTransactions();
+    }
 }
